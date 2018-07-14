@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.personalLibrary.dt.unit.base_ProjectSettings</string>
+	<key>Project</key>
+	<dict>
+		<key>SDK</key>
+		<string>iphoneos</string>
+		<key>SharedSettings</key>
+		<dict>
+			<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+			<string>latest_iphoneos</string>
+			<key>CODE_SIGN_IDENTITY</key>
+			<string>iPhone Developer</string>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaTouchLibraryOrFrameworkTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>hasUnitTests</string>
+			<key>Name</key>
+			<string>Include Unit Tests</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.cocoaTouchFrameworkUnitTestBundle</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___Tests</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

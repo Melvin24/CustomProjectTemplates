@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.personalLibrary.dt.unit.swift_lint_run_script</string>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>Name</key>
+					<string>Run SwiftLint</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>ShellScript</key>
+					<string>$(git rev-parse --show-toplevel)/Tools/SwiftLint/swiftlint --path ${SRCROOT}</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
